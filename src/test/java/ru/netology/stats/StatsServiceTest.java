@@ -34,21 +34,21 @@ class StatsServiceTest {
     }
 
     @Test
-    void minMonth() {
+    void testMinMonth() {
         int expected = 9;
         int actual = service.minMonth(sales);
         assertEquals(expected, actual);
     }
 
     @Test
-    void lowMedium() {
+    void testLowMedium() {
         int expected = 5;
         int actual = service.lowMedium(sales);
         assertEquals(expected, actual);
     }
 
     @Test
-    void highMedium() {
+    void testHighMedium() {
         int expected = 5;
         int actual = service.highMedium(sales);
         assertEquals(expected, actual);
